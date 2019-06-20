@@ -1,0 +1,195 @@
+﻿@model IEnumerable<OneStopSolution.Models.User>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TanggalDaftar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NRP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nama)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JenisKelamin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jurusan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fakultas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Program)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Angkatan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IPK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TanggalLahir)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempatLahir)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Alamat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KodePos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Provinsi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoTelepon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoHP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TanggalLulus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SekolahAsal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlamatSekolah)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KotaSekolah)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UkuranToga)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IkutWisuda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pembayaran)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TanggalDaftar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NRP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nama)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JenisKelamin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jurusan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fakultas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Program)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Angkatan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IPK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TanggalLahir)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempatLahir)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Alamat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KodePos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Provinsi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoTelepon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoHP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TanggalLulus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SekolahAsal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlamatSekolah)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KotaSekolah)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UkuranToga)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IkutWisuda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pembayaran)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageURL)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
