@@ -41,7 +41,7 @@ namespace OneStopSolution.Views
         public ActionResult Create()
         {
             ViewBag.CategoriesId = new SelectList(db.JobCategories, "Id", "CategoriesName");
-            ViewBag.PosterId = new SelectList(db.Users, "Id", "Username");
+            ViewBag.PosterId = new SelectList(db.Users, "Id", "NRP");
             return View();
         }
 
@@ -50,7 +50,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Address,Description,Position,PosterId,CategoriesId,Location")] Job job)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Address,Description,Position,PosterId,CategoriesId,Location,Skill_Requirements,Company,Icon_Company")] Job job)
         {
             if (ModelState.IsValid)
             {
@@ -61,7 +61,7 @@ namespace OneStopSolution.Views
             }
 
             ViewBag.CategoriesId = new SelectList(db.JobCategories, "Id", "CategoriesName", job.CategoriesId);
-            ViewBag.PosterId = new SelectList(db.Users, "Id", "Username", job.PosterId);
+            ViewBag.PosterId = new SelectList(db.Users, "Id", "NRP", job.PosterId);
             return View(job);
         }
 
@@ -78,7 +78,7 @@ namespace OneStopSolution.Views
                 return HttpNotFound();
             }
             ViewBag.CategoriesId = new SelectList(db.JobCategories, "Id", "CategoriesName", job.CategoriesId);
-            ViewBag.PosterId = new SelectList(db.Users, "Id", "Username", job.PosterId);
+            ViewBag.PosterId = new SelectList(db.Users, "Id", "NRP", job.PosterId);
             return View(job);
         }
 
@@ -87,7 +87,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Address,Description,Position,PosterId,CategoriesId,Location")] Job job)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Address,Description,Position,PosterId,CategoriesId,Location,Skill_Requirements,Company,Icon_Company")] Job job)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace OneStopSolution.Views
                 return RedirectToAction("Index");
             }
             ViewBag.CategoriesId = new SelectList(db.JobCategories, "Id", "CategoriesName", job.CategoriesId);
-            ViewBag.PosterId = new SelectList(db.Users, "Id", "Username", job.PosterId);
+            ViewBag.PosterId = new SelectList(db.Users, "Id", "NRP", job.PosterId);
             return View(job);
         }
 

@@ -40,7 +40,7 @@ namespace OneStopSolution.Views
         // GET: Notifications/Create
         public ActionResult Create()
         {
-            ViewBag.UserId = new SelectList(db.Users, "Id", "Username");
+            ViewBag.UserId = new SelectList(db.Users, "Id", "NRP");
             return View();
         }
 
@@ -49,7 +49,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Guid,UserId,Content")] Notification notification)
+        public async Task<ActionResult> Create([Bind(Include = "Guid,UserId,Content,CreatedAt,Is_New")] Notification notification)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace OneStopSolution.Views
                 return RedirectToAction("Index");
             }
 
-            ViewBag.UserId = new SelectList(db.Users, "Id", "Username", notification.UserId);
+            ViewBag.UserId = new SelectList(db.Users, "Id", "NRP", notification.UserId);
             return View(notification);
         }
 
@@ -75,7 +75,7 @@ namespace OneStopSolution.Views
             {
                 return HttpNotFound();
             }
-            ViewBag.UserId = new SelectList(db.Users, "Id", "Username", notification.UserId);
+            ViewBag.UserId = new SelectList(db.Users, "Id", "NRP", notification.UserId);
             return View(notification);
         }
 
@@ -84,7 +84,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Guid,UserId,Content")] Notification notification)
+        public async Task<ActionResult> Edit([Bind(Include = "Guid,UserId,Content,CreatedAt,Is_New")] Notification notification)
         {
             if (ModelState.IsValid)
             {
@@ -92,7 +92,7 @@ namespace OneStopSolution.Views
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.UserId = new SelectList(db.Users, "Id", "Username", notification.UserId);
+            ViewBag.UserId = new SelectList(db.Users, "Id", "NRP", notification.UserId);
             return View(notification);
         }
 

@@ -75,7 +75,6 @@ C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\System.Net.Http.F
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\System.Web.Http.xml
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\System.Web.Http.WebHost.xml
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\obj\Debug\AdmissionDummy.csprojAssemblyReference.cache
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\obj\Debug\AdmissionDummy.csproj.CoreCompileInputs.cache
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\obj\Debug\AdmissionDummy.csproj.CopyComplete
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\obj\Debug\AdmissionDummy.dll
@@ -84,3 +83,4 @@ C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\EntityFramework.d
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\EntityFramework.SqlServer.dll
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\EntityFramework.xml
 C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\bin\EntityFramework.SqlServer.xml
+C:\Users\shini\Source\Repos\OneStopSolution\AdmissionDummy\obj\Debug\AdmissionDummy.csprojAssemblyReference.cache

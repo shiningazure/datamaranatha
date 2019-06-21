@@ -18,6 +18,7 @@ namespace OneStopSolution.Views
         // GET: Users
         public async Task<ActionResult> Index()
         {
+            
             return View(await db.Users.ToListAsync());
         }
 
@@ -47,7 +48,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Username,Password,TanggalDaftar,NRP,Nama,JenisKelamin,Jurusan,Fakultas,Program,Angkatan,IPK,TanggalLahir,TempatLahir,Alamat,Kota,KodePos,Provinsi,NoTelepon,NoHP,Email,TanggalLulus,SekolahAsal,AlamatSekolah,KotaSekolah,UkuranToga,IkutWisuda,Pembayaran,ImageURL")] User user)
+        public async Task<ActionResult> Create([Bind(Include = "Id,NRP,Username,Password,TanggalDaftar,Nama,JenisKelamin,Jurusan,Fakultas,Program,Angkatan,IPK,TanggalLahir,TempatLahir,Alamat,Kota,KodePos,Provinsi,NoTelepon,NoHP,Email,TanggalLulus,SekolahAsal,AlamatSekolah,KotaSekolah,UkuranToga,IkutWisuda,Pembayaran,ImageURL")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +81,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Username,Password,TanggalDaftar,NRP,Nama,JenisKelamin,Jurusan,Fakultas,Program,Angkatan,IPK,TanggalLahir,TempatLahir,Alamat,Kota,KodePos,Provinsi,NoTelepon,NoHP,Email,TanggalLulus,SekolahAsal,AlamatSekolah,KotaSekolah,UkuranToga,IkutWisuda,Pembayaran,ImageURL")] User user)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,NRP,Username,Password,TanggalDaftar,Nama,JenisKelamin,Jurusan,Fakultas,Program,Angkatan,IPK,TanggalLahir,TempatLahir,Alamat,Kota,KodePos,Provinsi,NoTelepon,NoHP,Email,TanggalLulus,SekolahAsal,AlamatSekolah,KotaSekolah,UkuranToga,IkutWisuda,Pembayaran,ImageURL")] User user)
         {
             if (ModelState.IsValid)
             {

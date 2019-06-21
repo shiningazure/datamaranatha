@@ -17,5 +17,8 @@ namespace OneStopSolution.Models
         public JobCategories Categories { get; set; }
         public Guid CategoriesId { get; set; }
         public string Location { get; set; }
+        public string Skill_Requirements { get; set; }
+        public string Company { get; set; }
+        public string Icon_Company { get; set; }
     }
 }

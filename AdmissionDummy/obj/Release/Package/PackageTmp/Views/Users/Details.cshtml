@@ -1,0 +1,82 @@
+﻿@model AdmissionDummy.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NRP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NRP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nomor_Telepon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nomor_Telepon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alamat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alamat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TahunKelulusan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TahunKelulusan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tanggal_Daftar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tanggal_Daftar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jurusan_Daftar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jurusan_Daftar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fakultas_Daftar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fakultas_Daftar)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

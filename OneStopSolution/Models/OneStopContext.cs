@@ -18,6 +18,7 @@ namespace OneStopSolution.Models
         public DbSet<Article> Articles { get; set; }
 
 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

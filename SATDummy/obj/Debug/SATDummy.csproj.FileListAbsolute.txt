@@ -79,7 +79,6 @@ C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\bin\System.Net.Http.Formatt
 C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\bin\System.Web.Http.xml
 C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\bin\System.Web.Http.WebHost.xml
 C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\obj\Debug\SATDummy.csprojAssemblyReference.cache
 C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\obj\Debug\SATDummy.csproj.CoreCompileInputs.cache
 C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\obj\Debug\SATDummy.csproj.CopyComplete
 C:\Users\shini\Source\Repos\OneStopSolution\SATDummy\obj\Debug\SATDummy.dll

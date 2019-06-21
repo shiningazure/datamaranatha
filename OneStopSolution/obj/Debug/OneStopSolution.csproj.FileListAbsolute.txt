@@ -83,4 +83,8 @@ C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\obj\Debug\OneStopSol
 C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\obj\Debug\OneStopSolution.csproj.CopyComplete
 C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\obj\Debug\OneStopSolution.dll
 C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\obj\Debug\OneStopSolution.pdb
+C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\bin\PagedList.dll
+C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\bin\PagedList.Mvc.dll
+C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\bin\PagedList.xml
+C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\bin\PagedList.Mvc.xml
 C:\Users\shini\Source\Repos\OneStopSolution\OneStopSolution\obj\Debug\OneStopSolution.csprojAssemblyReference.cache

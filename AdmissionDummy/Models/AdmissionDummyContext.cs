@@ -17,5 +17,9 @@ namespace AdmissionDummy.Models
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<AdmissionDummy.Models.User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<AdmissionDummy.Models.Staff> Staffs { get; set; }
     }
 }

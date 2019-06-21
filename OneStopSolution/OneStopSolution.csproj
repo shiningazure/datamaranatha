@@ -52,6 +52,12 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -194,6 +200,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -239,37 +246,36 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Users\View.cshtml" />
-    <Content Include="Views\Users\Create.cshtml" />
-    <Content Include="Views\Users\Delete.cshtml" />
-    <Content Include="Views\Users\Details.cshtml" />
-    <Content Include="Views\Users\Edit.cshtml" />
-    <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Articles\Create.cshtml" />
     <Content Include="Views\Articles\Delete.cshtml" />
     <Content Include="Views\Articles\Details.cshtml" />
     <Content Include="Views\Articles\Edit.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
-    <Content Include="Views\Notifications\Create.cshtml" />
-    <Content Include="Views\Notifications\Delete.cshtml" />
-    <Content Include="Views\Notifications\Details.cshtml" />
-    <Content Include="Views\Notifications\Edit.cshtml" />
-    <Content Include="Views\Notifications\Index.cshtml" />
-    <Content Include="Views\Jobs\Create.cshtml" />
-    <Content Include="Views\Jobs\Delete.cshtml" />
-    <Content Include="Views\Jobs\Details.cshtml" />
-    <Content Include="Views\Jobs\Edit.cshtml" />
-    <Content Include="Views\Jobs\Index.cshtml" />
     <Content Include="Views\Donations\Create.cshtml" />
     <Content Include="Views\Donations\Delete.cshtml" />
     <Content Include="Views\Donations\Details.cshtml" />
     <Content Include="Views\Donations\Edit.cshtml" />
     <Content Include="Views\Donations\Index.cshtml" />
+    <Content Include="Views\Jobs\Create.cshtml" />
+    <Content Include="Views\Jobs\Delete.cshtml" />
+    <Content Include="Views\Jobs\Details.cshtml" />
+    <Content Include="Views\Jobs\Edit.cshtml" />
+    <Content Include="Views\Jobs\Index.cshtml" />
     <Content Include="Views\JobCategories\Create.cshtml" />
     <Content Include="Views\JobCategories\Delete.cshtml" />
     <Content Include="Views\JobCategories\Details.cshtml" />
     <Content Include="Views\JobCategories\Edit.cshtml" />
     <Content Include="Views\JobCategories\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Notifications\Create.cshtml" />
+    <Content Include="Views\Notifications\Delete.cshtml" />
+    <Content Include="Views\Notifications\Details.cshtml" />
+    <Content Include="Views\Notifications\Edit.cshtml" />
+    <Content Include="Views\Notifications\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

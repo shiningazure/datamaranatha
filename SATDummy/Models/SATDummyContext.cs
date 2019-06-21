@@ -13,5 +13,8 @@ namespace SATDummy.Models
 
         }
 
+        public System.Data.Entity.DbSet<SATDummy.Models.MataKuliah> MataKuliahs { get; set; }
+
+        public System.Data.Entity.DbSet<SATDummy.Models.User> Users { get; set; }
     }
 }

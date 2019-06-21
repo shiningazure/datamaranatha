@@ -8,19 +8,20 @@ namespace OneStopSolution.Models
 {
     public class User
     {
+        
+        public string NRP { get; set; }
         [Key]
         public Guid Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public DateTime TanggalDaftar { get; set; }
-        public string NRP { get; set; }
         public string Nama { get; set; }
         public string JenisKelamin { get; set; }
         public string Jurusan { get; set; }
         public string Fakultas { get; set; }
         public string Program { get; set; }
         public int Angkatan { get; set; }
-        public float IPK { get; set; }
+        public string IPK { get; set; }
         public DateTime TanggalLahir { get; set; }
         public string TempatLahir { get; set; }
         public string Alamat { get; set; }

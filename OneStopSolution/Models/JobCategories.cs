@@ -9,5 +9,7 @@ namespace OneStopSolution.Models
     {
         public Guid Id { get; set; }
         public string CategoriesName { get; set; }
+        public string Icon_Category { get; set; }
+        public int Available_Jobs { get; set; }
     }
 }

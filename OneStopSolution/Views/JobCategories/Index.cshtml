@@ -14,6 +14,12 @@
         <th>
             @Html.DisplayNameFor(model => model.CategoriesName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Icon_Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Available_Jobs)
+        </th>
         <th></th>
     </tr>
 
@@ -21,6 +27,12 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.CategoriesName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Icon_Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Available_Jobs)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

@@ -47,7 +47,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,CategoriesName")] JobCategories jobCategories)
+        public async Task<ActionResult> Create([Bind(Include = "Id,CategoriesName,Icon_Category,Available_Jobs")] JobCategories jobCategories)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace OneStopSolution.Views
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,CategoriesName")] JobCategories jobCategories)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,CategoriesName,Icon_Category,Available_Jobs")] JobCategories jobCategories)
         {
             if (ModelState.IsValid)
             {

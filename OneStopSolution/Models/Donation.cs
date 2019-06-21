@@ -13,6 +13,8 @@ namespace OneStopSolution.Models
         public double Money { get; set; }
         public User User { get; set; }
         public User UserId { get; set; }
+        public string CreatedAt { get; set; }
+        public string Image_Donation { get; set; }
 
     }
 }
